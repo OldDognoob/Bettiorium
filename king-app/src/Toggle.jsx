@@ -15,11 +15,6 @@ const ToggleContainer = styled.button`
   grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
   justify-content: end;
- 
- 
-
-  
-
   background: ${({ theme: { body } }) => body};
   cursor: pointer;
   transition: all 0.3s linear;
@@ -30,7 +25,6 @@ const Switch = styled.div`
   height: 2.5em;
   border-radius: 50%;
   background-color: ${({ theme: { text } }) => text};
-  /* position: relative; */
   margin-right: 50px;
   transform: ${({ theme: { name } }) =>
     name === "light" ? "translateX(0)" : "translateX(2.5em)"};
