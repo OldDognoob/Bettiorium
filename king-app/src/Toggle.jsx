@@ -11,6 +11,15 @@ const ToggleContainer = styled.button`
   margin: 0 1800px;
   padding: 0.225em;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-content: end;
+ 
+ 
+
+  
+
   background: ${({ theme: { body } }) => body};
   cursor: pointer;
   transition: all 0.3s linear;

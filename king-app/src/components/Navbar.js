@@ -6,6 +6,7 @@ import { lightTheme, darkTheme } from "../theme";
 import { GlobalStyles } from "../global";
 import Toggle from "../Toggle";
 import { useDarkMode } from "../useDarkMode";
+import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
