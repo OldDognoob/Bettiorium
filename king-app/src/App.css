@@ -6,8 +6,9 @@
 }
 
 .home,
-.services,
-.products,
+.aboutUs,
+.articles,
+.videos,
 .sign-up {
   display: flex;
   height: 90vh;
@@ -16,8 +17,8 @@
   font-size: 3rem;
 }
 
-.services {
-  background-image: url('/images/img-2.jpg');
+.aboutUs {
+  background-image: url('');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,8 +26,17 @@
   font-size: 100px;
 }
 
-.products {
-  background-image: url('/images/img-1.jpg');
+.articles {
+  background-image: url('');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.videos {
+  background-image: url('');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -35,7 +45,7 @@
 }
 
 .sign-up {
-  background-image: url('/images/img-8.jpg');
+  background-image: url('');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
