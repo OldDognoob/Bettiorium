@@ -17,7 +17,11 @@
     height: 80px;
     max-width: 1500px;
   }
-  
+
+  .navbar-container .toggleContainer{
+    
+  }
+
   .navbar-logo {
     color: #fff;
     justify-self: start;
