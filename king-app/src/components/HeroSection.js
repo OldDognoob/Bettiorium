@@ -6,16 +6,16 @@ import ReactPlayer from "react-player";
 
 function HeroSection() {
   return (
+    
     <div className="hero-container">
-      {/* <ReactPlayer
+       <h1>KINGDOM AWAITS YOU</h1>
+      <ReactPlayer
         url="https://www.youtube.com/watch?v=FiXCxfWWwPo"
         controls
         playbackRate={2}
         width="896px"
         height="504px"
-      /> */}
-
-      <h1>KINGDOM AWAITS YOU</h1>
+      />
       <p>What are you waiting for?</p>
       <div className="hero-btns">
         <Button
