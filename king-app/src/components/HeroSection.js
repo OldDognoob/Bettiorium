@@ -17,6 +17,9 @@ function HeroSection() {
       <img src={Logo} alt="logo"/>
       <div className="hero-container">
       <div className={classnames("App", { "dark-mode": isDarkMode })}>
+         {/* <button className="toggle-button" onClick={toggleDarkMode}>
+              {isDarkMode ? "🌙 " : "🌞 "}
+            </button> */}
         <h1>KINGDOM AWAITS YOU</h1>
         <ReactPlayer
           url="https://www.youtube.com/watch?v=FiXCxfWWwPo"

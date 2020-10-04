@@ -31,7 +31,6 @@ function Navbar() {
 
   return (
     <>
-      {/* <div className={classnames("App", { "dark-mode": isDarkMode })}> */}
         <nav className="navbar">
           <div className="navbar-container">
             <button className="toggle-button" onClick={toggleDarkMode}>
@@ -92,7 +91,6 @@ function Navbar() {
           {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
           </div>
         </nav>
-      {/* </div> */}
     </>
   );
 }

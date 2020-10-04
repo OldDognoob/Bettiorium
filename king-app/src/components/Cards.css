@@ -5,6 +5,9 @@
   
   h1 {
     text-align: center;
+    background-color:rgb(240, 240, 74);
+    transition: all 0.3s ease-out;
+    cursor:pointer;
   }
   
   .cards__container {
