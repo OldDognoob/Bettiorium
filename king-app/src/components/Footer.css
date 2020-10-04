@@ -293,3 +293,12 @@ hr {
   padding: 10px 20px;
   border-radius: 4px;
 } */
+
+/* Dark functionality */
+
+/* import classnames from "classnames";
+  import useDarkMode from "../hooks/useDarkMode";
+ 
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
+
+ <div className={classnames("App", { "dark-mode": isDarkMode })}></div> */
