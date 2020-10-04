@@ -1,7 +1,7 @@
 import React from "react";
 import Cards from "../Cards";
 import Footer from "../Footer";
-import Videos from "../pages/Videos";
+// import Videos from "../pages/Videos";
 import Dragon from "./../../dragon.jpg";
 import "../../App.css";
 

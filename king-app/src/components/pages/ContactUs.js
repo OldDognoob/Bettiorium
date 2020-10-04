@@ -1,6 +1,18 @@
-import React from 'react';
-import '../../App.css';
+import React from "react";
+import Raven from "../../raven.jpg";
+import Footer from "../Footer";
 
-export default function Articles() {
-  return <h1 className='articles'>ARTICLES</h1>;
+
+
+function ContactUs() {
+  return (
+    <>
+      <div className="hero">
+        <img src={Raven} alt="raven"/>
+        <Footer />
+      </div>
+    </>
+  );
 }
+
+export default ContactUs;
