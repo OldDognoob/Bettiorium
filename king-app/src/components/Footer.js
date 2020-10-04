@@ -30,16 +30,11 @@ function Footer() {
           <div class='footer-link-items'>
             <h2>About Us</h2>
             <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>KingDom Careers</Link>
-            <Link to='/'>Foreign Investors</Link>
             <Link to='/'>Royal Terms of Service</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
             <Link to='/'>Royal Contact</Link>
-            <Link to='/'>Knight Support</Link>
-            <Link to='/'>Dark KingDom Destinations</Link>
             <Link to='/'>Faith Sponsorships</Link>
           </div>
         </div>
@@ -47,16 +42,14 @@ function Footer() {
           <div class='footer-link-items'>
             <h2>Videos</h2>
             <Link to='/'>Submit Video</Link>
-            <Link to='/'>KingDom Ambassadors</Link>
-            <Link to='/'>Royal Secret Service</Link>
             <Link to='/'>Bettiorium Influencer</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/https://www.facebook.com/Bettiorium-2212372672383230'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <a to='/'>Instagram</a>
+            <a href='/https://www.facebook.com/groups/251928932131425'>Facebook</a>
+            <a to='/'>Youtube</a>
+            <a to='/'>Twitter</a>
           </div>
         </div>
       </div>
@@ -72,7 +65,7 @@ function Footer() {
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
-              to='/https://www.facebook.com/Bettiorium-2212372672383230'
+              href='/https://www.facebook.com/groups/251928932131425'
               target='_blank'
               aria-label='Facebook'
             >
