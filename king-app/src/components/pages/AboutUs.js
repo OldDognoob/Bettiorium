@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "../Cards";
-import Footer from "../Footer";
+// import Footer from "../Footer";
 // import Videos from "../pages/Videos";
 import Dragon from "./../../dragon.jpg";
 import "../../App.css";
@@ -15,7 +15,7 @@ function AboutUs() {
       <div className="hero">
         <img src={Dragon} alt="dragon"/>
         <Cards />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
