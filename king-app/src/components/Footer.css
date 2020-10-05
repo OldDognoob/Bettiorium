@@ -181,7 +181,7 @@ h1 {
 }
 
 .form {
-  background: #0e101c;
+  /* background: #0e101c; */
   max-width: 400px;
   margin: 0 auto;
 }
@@ -293,6 +293,11 @@ hr {
   padding: 10px 20px;
   border-radius: 4px;
 } */
+
+
+/* SingUp Form */
+
+
 
 /* Dark functionality */
 

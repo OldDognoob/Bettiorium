@@ -97,7 +97,7 @@ body,
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid rgb(31, 73, 47);
+  border-bottom: 4px solid rgb(151, 37, 75);
   transition: all 0.2s ease-out;
 }
 

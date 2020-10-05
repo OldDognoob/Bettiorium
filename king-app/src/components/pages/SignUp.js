@@ -1,6 +1,27 @@
-import React from 'react';
-import '../../App.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import Form from "../Form";
+import signUp from "../signUp";
+import { StateMachineProvider, createStore } from "little-state-machine";
+import Fantasy from "../../fantasy.jpg";
 
-export default function SignUp() {
-  return <h1 className='sign-up'>LIKE & SUBSCRIBE</h1>;
+import "../Footer.css";
+
+createStore({
+  signUp,
+});
+
+function SignUp() {
+  return (
+    <>
+      <div className="hero">
+        <img src={Fantasy} alt="fantasy" />
+        <StateMachineProvider>
+          <Form />
+        </StateMachineProvider>
+      </div>
+    </>
+  );
 }
+
+export default SignUp;
