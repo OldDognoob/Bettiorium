@@ -22,7 +22,7 @@ function HeroSection() {
             </button> */}
         <h1>KINGDOM AWAITS YOU</h1>
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=FiXCxfWWwPo"
+          url="https://www.youtube.com/watch?v=DUpL2NP5WsI"
           controls
           playbackRate={2}
           width="896px"

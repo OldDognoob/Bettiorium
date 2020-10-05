@@ -1,11 +1,19 @@
 import React from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
+import ReactPlayer from "react-player";
 
 function Cards() {
   return (
     <div className="cards">
       <h1>Check out these EPIC CRAZY LOYAL CITIZENS!</h1>
+      <ReactPlayer
+          url="https://www.youtube.com/watch?v=rfWat-G0pTA"
+          controls
+          playbackRate={2}
+          width="896px"
+          height="504px"
+        />
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
