@@ -177,7 +177,7 @@ h1 {
   font-weight: 100;
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgb(79, 98, 148);
+  /* border-bottom: 1px solid rgb(79, 98, 148); */
 }
 
 .form {
@@ -186,7 +186,7 @@ h1 {
   margin: 0 auto;
 }
 
-p {
+h1,p {
   color: #bf1650;
 }
 

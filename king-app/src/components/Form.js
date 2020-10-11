@@ -40,63 +40,65 @@ function Form() {
     <div className="footer-container">
       <section className="footer-subscription">
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
-      <h1>BETTIORIUM SIGN UP FORM</h1>
+          <h1>Bettiorium Royal Sign Up Form</h1>
+          <label>Email</label>
+          <input
+            defaultValue={signUp.email}
+            ref={register({
+              required: true,
+              pattern: /(.+)@(.+){2,}\.(.+){2,}/,
+            })}
+            name="email"
+          />
+          {errors.email && errors.email.type === "required" && (
+            <p>This is required</p>
+          )}
+          {errors.email && errors.email.type === "pattern" && (
+            <p>Invalid email address</p>
+          )}
 
-      <label>Email</label>
-      <input
-        defaultValue={signUp.email}
-        ref={register({ required: true, pattern: /(.+)@(.+){2,}\.(.+){2,}/ })}
-        name="email"
-      />
-      {errors.email && errors.email.type === "required" && (
-        <p>This is required</p>
-      )}
-      {errors.email && errors.email.type === "pattern" && (
-        <p>Invalid email address</p>
-      )}
+          <label>First name</label>
+          <input
+            defaultValue={signUp.firstname}
+            ref={register({ minLength: 3 })}
+            name="firstname"
+          />
+          {errors.firstname && <p>First name is too short</p>}
 
-      <label>First name</label>
-      <input
-        defaultValue={signUp.firstname}
-        ref={register({ minLength: 3 })}
-        name="firstname"
-      />
-      {errors.firstname && <p>First name is too short</p>}
+          <label>Last name</label>
+          <input
+            defaultValue={signUp.lastname}
+            ref={register({ minLength: 3 })}
+            name="lastname"
+          />
+          {errors.lastname && <p>Last name is too short</p>}
 
-      <label>Last name</label>
-      <input
-        defaultValue={signUp.lastname}
-        ref={register({ minLength: 3 })}
-        name="lastname"
-      />
-      {errors.lastname && <p>Last name is too short</p>}
+          <label>Username</label>
+          <input
+            defaultValue={signUp.username}
+            ref={register({ required: true, validate: validateUsername })}
+            name="username"
+          />
+          {errors.username && <p>Username is already taken</p>}
 
-      <label>Username</label>
-      <input
-        defaultValue={signUp.username}
-        ref={register({ required: true, validate: validateUsername })}
-        name="username"
-      />
-      {errors.username && <p>Username is already taken</p>}
+          <label>Password</label>
+          <input
+            defaultValue={signUp.password}
+            ref={register({
+              required: true,
+              pattern: /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/,
+            })}
+            name="password"
+            type="password"
+          />
+          {errors.password && <p>password is too simple</p>}
 
-      <label>Password</label>
-      <input
-        defaultValue={signUp.password}
-        ref={register({
-          required: true,
-          pattern: /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/,
-        })}
-        name="password"
-        type="password"
-      />
-      {errors.password && <p>password is too simple</p>}
-
-      <input
-        type="submit"
-        value={isSubmitting ? "Sending..." : "Submit"}
-        disabled={isSubmitting}
-      />
-    </form>
+          <input
+            type="submit"
+            value={isSubmitting ? "Sending..." : "Submit"}
+            disabled={isSubmitting}
+          />
+        </form>
       </section>
       <div class="footer-links">
         <div className="footer-link-wrapper">
