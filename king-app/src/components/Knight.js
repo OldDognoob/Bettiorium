@@ -28,11 +28,19 @@ function Knight() {
         his loyal Queen!!
       </p>
       <p>
-        <strong>T</strong>his is the story of our Bettiorium Kingdom and the
+        <strong>T</strong>his is the story of Bettiorium Kingdom and the
         tails of our crazy loyal knight Mosxiada!!
       </p>
       <ReactPlayer
         url="https://www.youtube.com/watch?v=kyAD0Y6mM94"
+        controls
+        playbackRate={2}
+        width="896px"
+        height="504px"
+      />
+       <h1>Bettiorium spirit is alive and welcome all of you in our adventures!</h1>
+      <ReactPlayer
+        url="https://www.youtube.com/watch?v=8JirWkcgCc4"
         controls
         playbackRate={2}
         width="896px"
