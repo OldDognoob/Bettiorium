@@ -1,5 +1,5 @@
 .cards {
-  padding: 4rem;
+  padding: 1.5rem;
   background: #fff;
   display: flex;
   flex-flow: column;
@@ -21,7 +21,7 @@
 
 h1 {
   text-align: center;
-  line-height: 80px;
+  line-height: 20px;
   margin-bottom: 24px;
 }
 

@@ -6,7 +6,7 @@ import ReactPlayer from "react-player";
 function Cards() {
   return (
     <div className="cards">
-      <p>
+      {/* <p>
         <strong>O</strong>nce upon a time in a faraway land, there was a tiny Kingdom,
         peaceful,prosperous and rich.(Yea!right)
       </p>
@@ -38,7 +38,7 @@ function Cards() {
         playbackRate={2}
         width="896px"
         height="504px"
-      />
+      /> */}
 
       <h1>The Knights of Bettiorium round table!</h1>
       <ReactPlayer

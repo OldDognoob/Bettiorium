@@ -1,5 +1,6 @@
 import React from "react";
 import Cards from "../Cards";
+import Knight from "../Knight";
 // import Footer from "../Footer";
 // import Videos from "../pages/Videos";
 import Dragon from "./../../dragon.jpg";
@@ -14,6 +15,7 @@ function AboutUs() {
     <>
       <div className="hero">
         <img src={Dragon} alt="dragon"/>
+        <Knight/>
         <Cards />
         {/* <Footer /> */}
       </div>
