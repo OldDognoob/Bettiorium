@@ -28,27 +28,27 @@ function HeroSection() {
           width="896px"
           height="504px"
         />
-        <p>What are you waiting for?</p>
-        <div className="hero-btns">
+        <h1>Do you dare to join Us?</h1>
+        {/* <div className="hero-btns">
           <Button
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
           >
             ROCK THE WORLD!
-          </Button>
+          </Button> */}
           <Button
             className="btns"
             buttonStyle="btn--primary"
             buttonSize="btn--large"
             onClick={console.log("hey")}
           >
-            WATCH TRAILER <i className="far fa-play-circle" />
+            Watch the Royal Trailer <i className="far fa-play-circle" />
           </Button>
         </div>
       </div>
     </div>
-    </div>
+    // </div>
   );
 }
 
