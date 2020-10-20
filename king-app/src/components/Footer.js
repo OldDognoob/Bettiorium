@@ -91,10 +91,10 @@ function Footer() {
           </div> */}
           <div class="footer-link-items">
             <h2>Social Media</h2>
-            <a to="/">Instagram</a>
-            <a href="/">Facebook</a>
-            <a to="/">Youtube</a>
-            <a to="/">Twitter</a>
+            <a href="https://www.instagram.com/bettiorium/" >Instagram</a>
+            <a href="https://www.facebook.com/groups/251928932131425">Facebook</a>
+            <a href="https://www.youtube.com/channel/UCb9OAJkIvjY_Tx0-STYNenw/featured">Youtube</a>
+            <a href="https://twitter.com/bettiorium">Twitter</a>
           </div>
         </div>
       </div>
