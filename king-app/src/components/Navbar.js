@@ -38,7 +38,7 @@ function Navbar() {
             </button> */}
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             BETTIORIUM
-            <i class="fas fa-crown" />
+            <i class="fab fa-fort-awesome-alt"/>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
