@@ -67,6 +67,8 @@
   width: 160px;
   box-sizing: border-box;
   cursor:pointer;
+
+
 }
 
 .footer-link-items h2 {
@@ -76,11 +78,17 @@
 .footer-link-items > h2 {
   color: #fff;
 }
+.footer-link-items h2:hover{
+  font-size: 22px;
+  transform: translateY(-2px);
+  
+}
 
 .footer-link-items a {
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
+  transition: 0.3s ease-out;
 }
 
 .footer-link-items a:hover {
