@@ -1,56 +1,72 @@
 import React from "react";
 import "./Intro.css";
 import CardItem from "./CardItem";
+import { Button } from "./Button";
 import ReactPlayer from "react-player";
 
 function List() {
   return (
     <div className="cards">
-      <h1> Bettiorium royal List</h1>
+      <h1> Bettiorium KingDom Playlist</h1>
+      <Button
+            className="btns"
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+          >
+            ROCK THE WORLD!
+          </Button>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=FQRrFVZAbs0"
-              controls
+              url="https://www.youtube.com/playlist?list=PLzLiE4VJVS9dic3OUaLf1n6zbeR_fQWac"
+              className="react-player"
+              playing={false}
               playbackRate={2}
-              width="896px"
+              width="750px"
               height="504px"
             />
           </ul>
           <ul className="cards__items">
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=vnienOlaAlk"
-              controls
+              url="https://www.youtube.com/playlist?list=PLzLiE4VJVS9eat_U0YARukOuRs0ofQCKB"
+              className="react-player"
+              playing={false}
               playbackRate={2}
-              width="896px"
+              width="750px"
               height="504px"
             />
           </ul>
+
           <ul className="cards__items">
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=iQp1_GfDhwQ"
-              controls
+              url="https://www.youtube.com/playlist?list=PLzLiE4VJVS9fFF3L_uj_aLQfqKIWRY8U2"
+              className="react-player"
+              playing={false}
               playbackRate={2}
-              width="896px"
+              width="750px"
               height="504px"
             />
           </ul>
+
           <ul className="cards__items">
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=mAh-sOmjEjY"
-              controls
+              url="https://www.youtube.com/playlist?list=PLzLiE4VJVS9cjJC_jEq_rBNuDbQD9ovCA"
+              className="react-player"
+              playing={false}
               playbackRate={2}
-              width="896px"
+              width="750px"
               height="504px"
             />
           </ul>
+
           <ul className="cards__items">
             <ReactPlayer
-              url="hhttps://www.youtube.com/watch?v=NTqeiIsrp7o"
-              controls
+              url="https://www.youtube.com/playlist?list=PLzLiE4VJVS9dJqfCSK90vMXHWMOgMPxh1"
+              className="react-player"
+              playing={false}
               playbackRate={2}
-              width="896px"
+              width="750px"
               height="504px"
             />
           </ul>
