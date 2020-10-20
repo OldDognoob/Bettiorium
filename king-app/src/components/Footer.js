@@ -103,7 +103,7 @@ function Footer() {
           <div class="footer-logo">
             <Link to="/" className="social-logo">
               BETTIORIUM
-              <i class="fas fa-crown" />
+              <i class="fab fa-fort-awesome-alt"/>
             </Link>
           </div>
           <small class="website-rights">BETTIORIUM © 2020</small>
