@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
-// import classnames from "classnames";
-// import useDarkMode from "../hooks/useDarkMode";
 import "./Navbar.css";
 // import "../App.css";
 
@@ -27,15 +25,10 @@ function Navbar() {
 
   window.addEventListener("resize", showButton);
 
-  // const { isDarkMode, toggleDarkMode } = useDarkMode();
-
   return (
     <>
         <nav className="navbar">
           <div className="navbar-container">
-            {/* <button className="toggle-button" onClick={toggleDarkMode}>
-              {isDarkMode ? "🌙 " : "🌞 "}
-            </button> */}
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             BETTIORIUM
             <i class="fab fa-fort-awesome-alt"/>
