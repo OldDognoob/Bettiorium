@@ -37,7 +37,7 @@ root {
   .btn--large:hover,
   .btn--medium:hover {
     transition: all 0.3s ease-out;
-    background: rgb(225, 240, 14);
+    background: rgb(222, 157, 228);
     color: #242424;
     transition: 250ms;
   }
