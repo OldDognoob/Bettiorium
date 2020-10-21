@@ -44,7 +44,7 @@ function SocialLinks() {
       <section class="social-media">
         <div class="social-media-wrap">
           <div class="footer-logo">
-            <Link to="/home" className="social-logo">
+            <Link to="/" className="social-logo">
               BETTIORIUM
               <i class="fab fa-fort-awesome-alt" />
             </Link>

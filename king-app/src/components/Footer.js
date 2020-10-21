@@ -74,20 +74,20 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>About Us</h2>
-            <Link to="/sign-up">How it works</Link>
+            <Link to="/sign-up">Sign with us</Link>
             <Link to="/about-us">Royal Knight Tails</Link>
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
             <Link to="/contact-us">Royal Contact</Link>
-            <Link to="/">Faith Sponsorships</Link>
+            <Link to="/about-us">Faith Servants</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
           {/* <div class="footer-link-items">
-            <h2>Videos</h2>
-            <Link to="/">Submit Video</Link>
-            <Link to="/">Bettiorium Influencer</Link>
+            <h2>Listen Us</h2>
+            <Link to="/videos"></Link>
+            <Link to="/home">Bettiorium Awaits</Link>
           </div> */}
           <div class="footer-link-items">
             <h2>Social Media</h2>
@@ -103,7 +103,7 @@ function Footer() {
           <div class="footer-logo">
             <Link to="/" className="social-logo">
               BETTIORIUM
-              <i class="fab fa-fort-awesome-alt"/>
+              <i class="fab fa-fort-awesome-alt" />
             </Link>
           </div>
           <small class="website-rights">BETTIORIUM © 2020</small>
@@ -114,8 +114,10 @@ function Footer() {
             >
               <i class="fab fa-facebook-f" />
             </a>
-            <a href="https://www.instagram.com/bettiorium/" 
-              class="social-icon-link instagram">
+            <a
+              href="https://www.instagram.com/bettiorium/"
+              class="social-icon-link instagram"
+            >
               <i class="fab fa-instagram" />
             </a>
             <a
