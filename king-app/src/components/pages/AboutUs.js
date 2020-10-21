@@ -2,6 +2,7 @@ import React from "react";
 import Cards from "../Cards";
 import Knight from "../Knight";
 import Dragon from "./../../dragon.jpg";
+import SocialLinks from "../SocialLinks";
 import "../../App.css";
 
 
@@ -12,6 +13,7 @@ function AboutUs() {
         <img src={Dragon} alt="dragon" />
         <Knight />
         <Cards />
+        <SocialLinks/>
         {/* <Footer /> */}
       </div>
     </>
