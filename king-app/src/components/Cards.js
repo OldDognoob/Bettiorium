@@ -12,13 +12,13 @@ function Cards() {
           <ul className="cards__items">
             <CardItem
               src="images/Betty.jpg"
-              text="A normal person during the day a medieval queen during the night!"
-              label="Queen of Bettiorium"
+              text="Queen of Everything"
+              label="Queen"
               path="/about-us"
             />
             <CardItem
               src="images/Nickos.jpg"
-              text="LionHeart Philosopher ready to show your destiny to the outer world! "
+              text="Life is like a roll of toilet paper.The closer you get to the end the faster it goes."
               label="Philosopher"
               path="/about-us"
             />
@@ -51,7 +51,7 @@ function Cards() {
             <CardItem
               src="images/Dimos.jpg"
               text="He is the only person to fix your problem, you dont know you have in a way you dont understand!"
-              label="Programmer"
+              label="SwissKnifer"
               path="/About-us"
             />
           </ul>

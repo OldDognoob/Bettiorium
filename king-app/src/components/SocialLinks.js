@@ -7,10 +7,10 @@ function SocialLinks() {
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Join our KingDom if you Dare?
+          Bettiorium KingDom Awaits You!!
         </p>
         <p className="footer-subscription-text">
-          You can be our royal servant if you wish time!.
+          You can be our royal servant anytime you wish!.
         </p>
       </section>
       <div class="footer-links">
