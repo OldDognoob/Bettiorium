@@ -104,74 +104,68 @@ function Form() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>About Us</h2>
-            <Link to="/sign-up">How it works</Link>
-            <Link to="/">Royal Terms of Service</Link>
+            <Link to="/sign-up">Sign with us</Link>
+            <Link to="/about-us">Royal Knight Tails</Link>
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
-            <Link to="/">Royal Contact</Link>
-            <Link to="/">Faith Sponsorships</Link>
+            <Link to="/contact-us">Royal Contact</Link>
+            <Link to="/about-us">Faith Servants</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
-          <div class="footer-link-items">
+          {/* <div class="footer-link-items">
             <h2>Videos</h2>
             <Link to="/">Submit Video</Link>
             <Link to="/">Bettiorium Influencer</Link>
-          </div>
+          </div> */}
           <div class="footer-link-items">
             <h2>Social Media</h2>
-            <a to="/">Instagram</a>
-            <a href="/https://www.facebook.com/groups/251928932131425">
+            <a href="https://www.instagram.com/bettiorium/">Instagram</a>
+            <a href="https://www.facebook.com/groups/251928932131425">
               Facebook
             </a>
-            <a to="/">Youtube</a>
-            <a to="/">Twitter</a>
+            <a href="https://www.youtube.com/channel/UCb9OAJkIvjY_Tx0-STYNenw/featured">
+              Youtube
+            </a>
+            <a href="https://twitter.com/bettiorium">Twitter</a>
           </div>
         </div>
       </div>
       <section class="social-media">
         <div class="social-media-wrap">
           <div class="footer-logo">
-            <Link to="/" className="social-logo">
+            <Link to="/home" className="social-logo">
               BETTIORIUM
-              <i class="fas fa-crown" />
+              <i class="fab fa-fort-awesome-alt" />
             </Link>
           </div>
           <small class="website-rights">BETTIORIUM © 2020</small>
           <div class="social-icons">
-            <Link
+            <a
+              href="https://www.facebook.com/groups/251928932131425"
               class="social-icon-link facebook"
-              href="/https://www.facebook.com/groups/251928932131425"
-              target="_blank"
-              aria-label="Facebook"
             >
               <i class="fab fa-facebook-f" />
-            </Link>
-            <Link
+            </a>
+            <a
+              href="https://www.instagram.com/bettiorium/"
               class="social-icon-link instagram"
-              to="/"
-              target="_blank"
-              aria-label="Instagram"
             >
               <i class="fab fa-instagram" />
-            </Link>
-            <Link
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCb9OAJkIvjY_Tx0-STYNenw/featured"
               class="social-icon-link youtube"
-              to="/"
-              target="_blank"
-              aria-label="Youtube"
             >
               <i class="fab fa-youtube" />
-            </Link>
-            <Link
+            </a>
+            <a
+              href="https://twitter.com/bettiorium"
               class="social-icon-link twitter"
-              to="/"
-              target="_blank"
-              aria-label="Twitter"
             >
               <i class="fab fa-twitter" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
