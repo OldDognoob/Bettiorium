@@ -1,20 +1,21 @@
 import React from "react";
 import "./Intro.css";
 import CardItem from "./CardItem";
-import { Button } from "./Button";
+import { ButtonList } from "./ButtonList";
 import ReactPlayer from "react-player";
 
 function List() {
   return (
     <div className="cards">
-      <h1> Bettiorium KingDom Playlist</h1>
-      <Button
+      <h1> Bettiorium KingDom list</h1>
+      <ButtonList
             className="btns"
-            buttonStyle="btn--outline"
+            buttonStyle="btn--primary"
             buttonSize="btn--large"
+            onClick={console.log("hey")}
           >
-            ROCK THE WORLD!
-          </Button>
+            Watch our Kingdom <i className="far fa-play-circle" />
+          </ButtonList>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
