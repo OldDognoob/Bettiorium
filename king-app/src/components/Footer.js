@@ -17,10 +17,10 @@ function Footer() {
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Join our KingDom if you Dare?
+          Join our kingdom if you dare?
         </p>
         <p className="footer-subscription-text">
-          You can be our royal citizen if you wish for any time!.
+          Magic happens everywhere!.
         </p>
         <div className="Contact">
           <form onSubmit={handleSubmit(onSubmit)}>
