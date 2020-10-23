@@ -15,12 +15,12 @@ const defaultLng = 22.413208;
 const autocompleteStyle = {
   width: "90%",
   height: "40px",
-  marginTop: "10px"
+  marginTop: "10px",
 };
 
 export const mapContainerStyle = {
   height: "400px",
-  width: "100%"
+  width: "100%",
 };
 
 function getCity(addressArray) {
@@ -105,13 +105,13 @@ function Map({ onMarkerDragEnd }) {
     mapPositionLat: defaultLat,
     mapPositionLng: defaultLng,
     markerPositionLat: defaultLat,
-    markerPositionLng: defaultLng
+    markerPositionLng: defaultLng,
   });
 
   const { isLoaded, loadError, url } = useLoadScript({
     id: "map",
     googleMapsApiKey: API_KEY,
-    libraries
+    libraries,
   });
 
   console.log("isLoaded: ", isLoaded, " loadError: ", loadError, " url: ", url);
@@ -135,7 +135,7 @@ function Map({ onMarkerDragEnd }) {
               address: address || "",
               area: area || "",
               city: city || "",
-              state: state || ""
+              state: state || "",
             });
           });
         },
@@ -165,7 +165,7 @@ function Map({ onMarkerDragEnd }) {
       markerPositionLat: latValue,
       markerPositionLng: lngValue,
       mapPositionLat: latValue,
-      mapPositionLng: lngValue
+      mapPositionLng: lngValue,
     });
   }, []);
 
@@ -173,7 +173,7 @@ function Map({ onMarkerDragEnd }) {
     function memo() {
       return {
         lat: state.markerPositionLat,
-        lng: state.markerPositionLng
+        lng: state.markerPositionLng,
       };
     },
     [state.markerPositionLat, state.markerPositionLng]
