@@ -1,103 +1,69 @@
-import React, { useEffect } from "react";
+
+import React from "react";
+import ReactDOM from "react-dom";
 import { useForm } from "react-hook-form";
-import { updateSignUp } from "./signUpActions";
-import { useStateMachine } from "little-state-machine";
+import {
+  CHECK_EMAIL_REGEX,
+  ERROR_MSG_EMAIL_PATTERN,
+  ERROR_MSG_REQUIRED,
+} from "./const";
 
 import { Link } from "react-router-dom";
-
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-const validateUsername = async (value) => {
-  await sleep(3000);
-  return value === "monster";
-};
+import usePromise from "./usePromise";
+import { registerUser } from "./api";
+import ButtonForm from "./ButtonForm";
 
 function Form() {
-  const {
-    register,
-    handleSubmit,
-    formState: { isSubmitting },
-    errors,
-  } = useForm();
-  const {
-    state: { signUp },
-    action,
-  } = useStateMachine(updateSignUp);
+  const { register, handleSubmit, errors } = useForm();
+  const [{ loading, resolved, error }, doRegisterUser] = usePromise(
+    registerUser
+  );
 
-  const onSubmit = (data, e) => {
-    e.target.reset();
-    action(data);
-    alert("Successfully ❤️");
+  const onSubmit = async (data) => {
+    doRegisterUser(data);
   };
-
-  useEffect(() => {
-    if (Object.keys(errors).length) {
-      errors[Object.keys(errors)[0]].ref.focus();
-    }
-  }, [isSubmitting]);
 
   return (
     <div className="footer-container">
       <section className="footer-subscription">
-        <form className="form" onSubmit={handleSubmit(onSubmit)}>
-          <h1>Bettiorium Royal Sign Up Form</h1>
+        <h1>Bettiorium Royal Sign Up Form</h1>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <label>FirstName</label>
+          <input name="firstName" ref={register} />
+
+          <label>LastName</label>
+          <input name="lastName" ref={register} />
+
           <label>Email</label>
           <input
-            defaultValue={signUp.email}
-            ref={register({
-              required: true,
-              pattern: /(.+)@(.+){2,}\.(.+){2,}/,
-            })}
             name="email"
+            ref={register({
+              required: ERROR_MSG_REQUIRED,
+              pattern: {
+                value: CHECK_EMAIL_REGEX,
+                message: ERROR_MSG_EMAIL_PATTERN,
+              },
+            })}
           />
-          {errors.email && errors.email.type === "required" && (
-            <p>This is required</p>
-          )}
-          {errors.email && errors.email.type === "pattern" && (
-            <p>Invalid email address</p>
-          )}
-
-          <label>First name</label>
-          <input
-            defaultValue={signUp.firstname}
-            ref={register({ minLength: 3 })}
-            name="firstname"
-          />
-          {errors.firstname && <p>First name is too short</p>}
-
-          <label>Last name</label>
-          <input
-            defaultValue={signUp.lastname}
-            ref={register({ minLength: 3 })}
-            name="lastname"
-          />
-          {errors.lastname && <p>Last name is too short</p>}
-
-          <label>Username</label>
-          <input
-            defaultValue={signUp.username}
-            ref={register({ required: true, validate: validateUsername })}
-            name="username"
-          />
-          {errors.username && <p>Username is already taken</p>}
+          {errors.email ? <p>{errors.email.message}</p> : null}
 
           <label>Password</label>
           <input
-            defaultValue={signUp.password}
-            ref={register({
-              required: true,
-              pattern: /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/,
-            })}
-            name="password"
             type="password"
+            name="password"
+            ref={register({ required: ERROR_MSG_REQUIRED })}
           />
-          {errors.password && <p>password is too simple</p>}
+          {errors.password ? <p>{errors.password.message}</p> : null}
 
-          <input
-            type="submit"
-            value={isSubmitting ? "Sending..." : "Submit"}
-            disabled={isSubmitting}
-          />
+          {!loading && error
+            ? error.errors.map((e, idx) => <p key={idx}>{e.message}</p>)
+            : null}
+
+          {!loading && resolved ? <h6>{resolved.message}</h6> : null}
+
+          <ButtonForm type="submit" loading={loading}>
+            Submit
+          </ButtonForm>
         </form>
       </section>
       <div class="footer-links">
