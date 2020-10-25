@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Button } from "./Button";
-import {RoyalButton} from "./RoyalButton";
+import { RoyalButton } from "./RoyalButton";
 import "./HeroSection.css";
 import ReactPlayer from "react-player";
 import Logo from "../logo.jpg";
@@ -26,25 +26,25 @@ function HeroSection() {
           />
           <h1>Do you dare to join Us?</h1>
           <div className="hero-btns">
-          <Button
-            className="btns"
-            buttonStyle="btn--outline"
-            buttonSize="btn--large"
-          >
-            Join our Kingdom! <i className="far fa-play-circle" />
-          </Button>
-          <RoyalButton
-            className="btns"
-            buttonStyle="btn--primary"
-            buttonSize="btn--large"
-            onClick={console.log("hey")}
-          >
-            Watch the Royal trailer <i className="far fa-play-circle" />
-          </RoyalButton>
+            <Button
+              className="btns"
+              buttonStyle="btn--outline"
+              buttonSize="btn--large"
+            >
+              Join our Kingdom! <i className="far fa-play-circle" />
+            </Button>
+            <RoyalButton
+              className="btns"
+              buttonStyle="btn--primary"
+              buttonSize="btn--large"
+              onClick={console.log("hey")}
+            >
+              Watch the Royal trailer <i className="far fa-play-circle" />
+            </RoyalButton>
+          </div>
         </div>
       </div>
     </div>
-    // </div>
   );
 }
 
