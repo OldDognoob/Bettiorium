@@ -9,7 +9,7 @@ function Love() {
       <ReactPlayer
         url="https://www.youtube.com/watch?v=u6EdMjo8d18"
         controls
-        playbackRate={2}
+        playbackRate={1}
         width="896px"
         height="504px"
       />

@@ -23,7 +23,7 @@ function List() {
               url="https://www.youtube.com/playlist?list=PLzLiE4VJVS9dic3OUaLf1n6zbeR_fQWac"
               className="react-player"
               playing={false}
-              playbackRate={2}
+              playbackRate={1}
               width="750px"
               height="504px"
             />
@@ -33,7 +33,7 @@ function List() {
               url="https://www.youtube.com/playlist?list=PLzLiE4VJVS9eat_U0YARukOuRs0ofQCKB"
               className="react-player"
               playing={false}
-              playbackRate={2}
+              playbackRate={1}
               width="750px"
               height="504px"
             />
@@ -44,7 +44,7 @@ function List() {
               url="https://www.youtube.com/playlist?list=PLzLiE4VJVS9fFF3L_uj_aLQfqKIWRY8U2"
               className="react-player"
               playing={false}
-              playbackRate={2}
+              playbackRate={1}
               width="750px"
               height="504px"
             />
@@ -55,7 +55,7 @@ function List() {
               url="https://www.youtube.com/playlist?list=PLzLiE4VJVS9cjJC_jEq_rBNuDbQD9ovCA"
               className="react-player"
               playing={false}
-              playbackRate={2}
+              playbackRate={1}
               width="750px"
               height="504px"
             />
@@ -66,7 +66,7 @@ function List() {
               url="https://www.youtube.com/playlist?list=PLzLiE4VJVS9dJqfCSK90vMXHWMOgMPxh1"
               className="react-player"
               playing={false}
-              playbackRate={2}
+              playbackRate={1}
               width="750px"
               height="504px"
             />
