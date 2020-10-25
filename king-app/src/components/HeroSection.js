@@ -18,7 +18,7 @@ function HeroSection() {
         <div className={classnames("App", { "dark-mode": isDarkMode })}>
           <h1>KINGDOM AWAITS YOU</h1>
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=FiXCxfWWwPo"
+            url="https://www.youtube.com/watch?v=AaA9g2C5-zc&feature=youtu.be&fbclid=IwAR0tqRJqVFtYV_ZVXhihoblq8JOHqRNFXRQDPAlOJ_lSVoUGr--OcqNWT-Y"
             controls
             playbackRate={2}
             width="896px"
