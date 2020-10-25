@@ -34,7 +34,7 @@ function Knight() {
       <ReactPlayer
         url="https://www.youtube.com/watch?v=kyAD0Y6mM94"
         controls
-        playbackRate={2}
+        playbackRate={1}
         width="896px"
         height="504px"
       />
@@ -42,7 +42,7 @@ function Knight() {
       <ReactPlayer
         url="https://www.youtube.com/watch?v=8JirWkcgCc4"
         controls
-        playbackRate={2}
+        playbackRate={1}
         width="896px"
         height="504px"
       />
