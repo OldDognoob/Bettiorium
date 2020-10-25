@@ -17,6 +17,7 @@ function HeroSection() {
       <div className="hero-container">
         <div className={classnames("App", { "dark-mode": isDarkMode })}>
           <h1>KINGDOM AWAITS YOU</h1>
+          <h1>Do you dare to join Us?</h1>
           <ReactPlayer
             url="https://www.youtube.com/watch?v=AaA9g2C5-zc&feature=youtu.be&fbclid=IwAR0tqRJqVFtYV_ZVXhihoblq8JOHqRNFXRQDPAlOJ_lSVoUGr--OcqNWT-Y"
             controls
@@ -24,7 +25,7 @@ function HeroSection() {
             width="896px"
             height="504px"
           />
-          <h1>Do you dare to join Us?</h1>
+
           <div className="hero-btns">
             <Button
               className="btns"

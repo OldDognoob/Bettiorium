@@ -5,7 +5,7 @@ import CardItem from "./CardItem";
 function Cards() {
   return (
     <div className="cards">
-      <h1>The Royal knights of round table!</h1>
+      <h1>Knights of the Round Table!</h1>
 
       <div className="cards__container">
         <div className="cards__wrapper">
