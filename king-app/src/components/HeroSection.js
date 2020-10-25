@@ -21,7 +21,7 @@ function HeroSection() {
           <ReactPlayer
             url="https://www.youtube.com/watch?v=AaA9g2C5-zc&feature=youtu.be&fbclid=IwAR0tqRJqVFtYV_ZVXhihoblq8JOHqRNFXRQDPAlOJ_lSVoUGr--OcqNWT-Y"
             controls
-            playbackRate={2}
+            playbackRate={1}
             width="896px"
             height="504px"
           />
